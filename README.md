@@ -17,14 +17,21 @@
 
 ***
 
-빌드된 jar에서 아래와 같이 암호화된 문자열을 출력할 수 있다.
+빌드된 jar에서 아래와 같이 실행하여 암호화된 문자열을 출력할 수 있다.
 
-`
-java -cp encryptDataSourceFactory-1.0.jar com.dklee.util.Encryptor test
-`
+`java -cp encryptDataSourceFactory-1.0.jar com.dklee.util.Encryptor test`
 
 출력
 
-`
-test:e43f9e6623153e1a9c39ca25cdbebbb6
-`
+`test:e43f9e6623153e1a9c39ca25cdbebbb6`
+
+***
+
+## 톰켓 JNDI 설정
+
+tomcat lib 경로에 빌드된 encryptDataSourceFactory-1.0.jar 복사 
+
+tomcat server.xml jndi Resource 항목중 factory를 아래와 같이 설정
+
+`factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"`
+
