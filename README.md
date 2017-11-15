@@ -5,6 +5,9 @@
  tomcat DataSource Resource 사용에서 org.apache.tomcat.jdbc.pool.DataSourceFactory 에 대한 상속구현.
  
  user, password, url 암호화된 문자열로 사용하기위해 작성.
+ 
+ * tomcat 8.0.39 에서 테스트 작성되었음.
+ 
 ***
 ## com.dklee.util.Encryptor
  defaultSecretKey를 수정, encrypt 메소드를 통해 암호화된 값을 얻을수 있다.
